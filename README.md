@@ -10,7 +10,7 @@ This library provides developers with a simple set of bindings to help you integ
 
 PHP 5.6, 7.1 or higher
 
-## 💻 Installation 
+## 💻 Installation
 
 First time using Mercado Pago? Create your [Mercado Pago account](https://www.mercadopago.com), if you don’t have one already.
 
@@ -24,17 +24,17 @@ First time using Mercado Pago? Create your [Mercado Pago account](https://www.me
 That's it! Mercado Pago SDK has been successfully installed.
 
 ## 🌟 Getting Started
-  
+
   Simple usage looks like:
-  
+
 ```php
   <?php
     require_once 'vendor/autoload.php'; // You have to require the library from your Composer vendor folder
 
     MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN"); // Either Production or SandBox AccessToken
 
-    $payment = new MercadoPago\Payment();
-    
+    $payment = new MercadoPago\Entities\Payment();
+
     $payment->transaction_amount = 141;
     $payment->token = "YOUR_CARD_TOKEN";
     $payment->description = "Ergonomic Silk Shirt";
@@ -47,10 +47,9 @@ That's it! Mercado Pago SDK has been successfully installed.
     $payment->save();
 
     echo $payment->status;
-  ?>
 ```
 
-## 📚 Documentation 
+## 📚 Documentation
 
 Visit our Dev Site for further information regarding:
  - Payments APIs: [Spanish](https://www.mercadopago.com.ar/developers/es/guides/payments/api/introduction/) / [Portuguese](https://www.mercadopago.com.br/developers/pt/guides/payments/api/introduction/)
@@ -59,13 +58,13 @@ Visit our Dev Site for further information regarding:
 
 Check [our official code reference](https://mercadopago.github.io/sdk-php/) to explore all available functionalities.
 
-## ❤️ Support 
+## ❤️ Support
 
 If you require technical support, please contact our support team at [developers.mercadopago.com](https://developers.mercadopago.com)
 
-## 🏻 License 
+## 🏻 License
 
 ```
-MIT license. Copyright (c) 2018 - Mercado Pago / Mercado Libre 
+MIT license. Copyright (c) 2018 - Mercado Pago / Mercado Libre
 For more information, see the LICENSE file.
 ```
