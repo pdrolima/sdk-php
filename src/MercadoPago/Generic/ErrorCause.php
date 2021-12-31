@@ -1,6 +1,6 @@
 <?php
  
-namespace MercadoPago;
+namespace MercadoPago\Generic;
 
 class ErrorCause {
 
@@ -8,5 +8,3 @@ class ErrorCause {
     public $description = "";
 
 }
-
-?>

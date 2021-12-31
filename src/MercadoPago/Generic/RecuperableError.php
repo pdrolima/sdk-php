@@ -1,6 +1,6 @@
 <?php
- 
-namespace MercadoPago;
+
+namespace MercadoPago\Generic;
 
 class RecuperableError {
 
@@ -43,5 +43,3 @@ class RecuperableError {
     }
 
 }
-
-?>
